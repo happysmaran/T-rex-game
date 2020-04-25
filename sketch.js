@@ -81,6 +81,7 @@ function draw() {
   //trex.debug = true;
   background(255);
   text("Score: "+ score, 500,50);
+  text("high score: "+localVariable[HighestScore],200,50); 
   
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
